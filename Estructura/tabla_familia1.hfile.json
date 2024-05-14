@@ -1,0 +1,16 @@
+{
+    "row_key1": {
+        "columna1": [
+            {"timestamp": 1622547800, "valor": "valor1"},
+            {"timestamp": 1622547900, "valor": "valor2"}
+        ],
+        "columna2": [
+            {"timestamp": 1622547800, "valor": "valor3"}
+        ]
+    },
+    "row_key2": {
+        "columna1": [
+            {"timestamp": 1622548000, "valor": "valor4"}
+        ]
+    }
+}

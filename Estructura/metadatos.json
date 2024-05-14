@@ -1,0 +1,16 @@
+{
+    "tablas": {
+        "nombre_tabla1": {
+            "familias_columnas": ["familia1", "familia2"],
+            "configuraciones": {
+                "max_versions": 3
+            }
+        },
+        "nombre_tabla2": {
+            "familias_columnas": ["familiaA", "familiaB"],
+            "configuraciones": {
+                "max_versions": 5
+            }
+        }
+    }
+}
