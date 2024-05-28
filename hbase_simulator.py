@@ -147,7 +147,21 @@ class HBaseSimulator:
         return len(self.tables[table_name]["data"])
     
     def truncate(self, table_name):
-        column_families = self.tables[table_name]["column_families"]
+        print(f"Comenzando a truncar la tabla '{table_name}'...")
+        
+        print("Deshabilitando la tabla...")
         self.disable(table_name)
+        print(f"Tabla '{table_name}' deshabilitada.")
+        
+        column_families = self.tables[table_name]["column_families"]
+        print("Guardando información de las familias de columnas...")
+        
+        print("Eliminando la tabla...")
         self.drop(table_name)
+        print(f"Tabla '{table_name}' eliminada.")
+        
+        print("Recreando la tabla...")
         self.create(table_name, column_families)
+        print(f"Tabla '{table_name}' recreada.")
+        
+        print(f"Proceso de truncado de la tabla '{table_name}' completado.")
