@@ -1,3 +1,16 @@
+"""
+Universidad del Valle de Guatemala
+Proyecto 3 - Bases de datos Columnares
+Curso Base de datos 2
+
+Autores:
+- Maria Marta Ramirez
+- Gustavo Gonzalez
+- Diego Leiva
+- Jose Pablo Orellana
+- Gabriel Garcia
+"""
+
 import json
 import time
 import os
