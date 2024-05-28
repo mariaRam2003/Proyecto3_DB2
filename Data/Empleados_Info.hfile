@@ -1,0 +1,28 @@
+[
+    {
+        "row_key": "1",
+        "columns": {
+            "Nombre": {
+                "timestamp": 1591649830,
+                "value": "Juan"
+            },
+            "Apellido": {
+                "timestamp": 1591649830,
+                "value": "P\u00e9rez"
+            }
+        }
+    },
+    {
+        "row_key": "2",
+        "columns": {
+            "Nombre": {
+                "timestamp": 1591649830,
+                "value": "Ana"
+            },
+            "Apellido": {
+                "timestamp": 1591649830,
+                "value": "Garc\u00eda"
+            }
+        }
+    }
+]

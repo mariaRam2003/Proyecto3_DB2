@@ -1,0 +1,28 @@
+[
+    {
+        "row_key": "1",
+        "columns": {
+            "Departamento": {
+                "timestamp": 1591649830,
+                "value": "TI"
+            },
+            "Posici\u00f3n": {
+                "timestamp": 1591649830,
+                "value": "Desarrollador"
+            }
+        }
+    },
+    {
+        "row_key": "2",
+        "columns": {
+            "Departamento": {
+                "timestamp": 1591649830,
+                "value": "HR"
+            },
+            "Posici\u00f3n": {
+                "timestamp": 1591649830,
+                "value": "Manager"
+            }
+        }
+    }
+]

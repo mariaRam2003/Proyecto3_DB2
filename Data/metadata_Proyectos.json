@@ -1,0 +1,13 @@
+{
+    "table_name": "Proyectos",
+    "is_enabled": true,
+    "column_families": {
+        "Info": [
+            "NombreProyecto"
+        ],
+        "Tiempo": [
+            "Inicio",
+            "Fin"
+        ]
+    }
+}

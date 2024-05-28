@@ -1,0 +1,12 @@
+{
+    "table_name": "Departamentos",
+    "is_enabled": true,
+    "column_families": {
+        "Detalles": [
+            "NombreDepto"
+        ],
+        "Personal": [
+            "Empleado"
+        ]
+    }
+}

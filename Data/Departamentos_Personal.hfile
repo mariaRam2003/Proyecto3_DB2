@@ -1,0 +1,20 @@
+[
+    {
+        "row_key": "1",
+        "columns": {
+            "Empleado": {
+                "timestamp": 1591649830,
+                "value": "Juan"
+            }
+        }
+    },
+    {
+        "row_key": "2",
+        "columns": {
+            "Empleado": {
+                "timestamp": 1591649830,
+                "value": "Ana"
+            }
+        }
+    }
+]

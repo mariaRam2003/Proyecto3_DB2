@@ -1,0 +1,17 @@
+{
+    "table_name": "Empleados",
+    "is_enabled": true,
+    "column_families": {
+        "Info": [
+            "Nombre",
+            "Apellido"
+        ],
+        "Contacto": [
+            "Tel\u00e9fono"
+        ],
+        "Trabajo": [
+            "Departamento",
+            "Posici\u00f3n"
+        ]
+    }
+}

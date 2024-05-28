@@ -1,0 +1,28 @@
+[
+    {
+        "row_key": "1",
+        "columns": {
+            "Inicio": {
+                "timestamp": 1591649830,
+                "value": "2024-01-01"
+            },
+            "Fin": {
+                "timestamp": 1591649830,
+                "value": "2024-06-01"
+            }
+        }
+    },
+    {
+        "row_key": "2",
+        "columns": {
+            "Inicio": {
+                "timestamp": 1591649830,
+                "value": "2024-02-01"
+            },
+            "Fin": {
+                "timestamp": 1591649830,
+                "value": "2024-07-01"
+            }
+        }
+    }
+]
