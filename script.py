@@ -1,7 +1,7 @@
 import os
 import json
 
-data_dir = "Data"
+data_dir = "data"
 if not os.path.exists(data_dir):
     os.makedirs(data_dir)
 
