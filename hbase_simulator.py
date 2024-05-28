@@ -121,8 +121,11 @@ class HBaseSimulator:
         scanned_data = {}
         for row_key in sorted(self.tables[table_name]["data"].keys()):
             if start_row <= row_key <= end_row:
-                scanned_data[row_key] = self.tables[table_name]["data"][row_key]
+                row_data = self.tables[table_name]["data"][row_key]
+                row_metadata = {"timestamp": int(time.time())}
+                scanned_data[row_key] = {"metadata": row_metadata, "columns": row_data}
         return scanned_data
+
     
     def delete(self, table_name, row_key, column):
         cf, col = column.split(":")
