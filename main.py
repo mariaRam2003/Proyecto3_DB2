@@ -172,8 +172,11 @@ def main():
         
         elif choice == '16':
             table_name = input("Nombre de la tabla: ")
-            hbs.truncate(table_name)
-            print(f"La tabla '{table_name}' ha sido truncada.")
+            try:
+                hbs.truncate(table_name)
+                print(f"La tabla '{table_name}' ha sido truncada.")
+            except ValueError as e:
+                print(f"Error: {e}")
         
         elif choice == '17':
             print("Saliendo...")

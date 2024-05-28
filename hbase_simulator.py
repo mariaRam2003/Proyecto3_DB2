@@ -144,6 +144,7 @@ class HBaseSimulator:
         return len(self.tables[table_name]["data"])
     
     def truncate(self, table_name):
+        column_families = self.tables[table_name]["column_families"]
         self.disable(table_name)
         self.drop(table_name)
-        self.create(table_name, self.tables[table_name]["column_families"])
+        self.create(table_name, column_families)
