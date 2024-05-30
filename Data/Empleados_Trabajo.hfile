@@ -3,12 +3,10 @@
         "row_key": "1",
         "columns": {
             "Departamento": {
-                "timestamp": 1716910984,
-                "value": "TI"
+                "1717091406": "TI"
             },
             "Posici\u00f3n": {
-                "timestamp": 1716910984,
-                "value": "Desarrollador"
+                "1717091406": "Desarrollador"
             }
         }
     },
@@ -16,12 +14,10 @@
         "row_key": "2",
         "columns": {
             "Departamento": {
-                "timestamp": 1716910984,
-                "value": "HR"
+                "1717091406": "HR"
             },
             "Posici\u00f3n": {
-                "timestamp": 1716910984,
-                "value": "Manager"
+                "1717091406": "Manager"
             }
         }
     }

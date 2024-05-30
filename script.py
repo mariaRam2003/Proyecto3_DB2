@@ -35,32 +35,32 @@ metadata_files = {
 
 data_files = {
     "Empleados_Info.hfile": [
-        {"row_key": "1", "columns": {"Nombre": {"timestamp": 1591649830, "value": "Juan"}, "Apellido": {"timestamp": 1591649830, "value": "Pérez"}}},
-        {"row_key": "2", "columns": {"Nombre": {"timestamp": 1591649830, "value": "Ana"}, "Apellido": {"timestamp": 1591649830, "value": "García"}}}
+        {"row_key": "1", "columns": {"Nombre": {1591649830: "Juan"}, "Apellido": { 1591649830: "Pérez"}}},
+        {"row_key": "2", "columns": {"Nombre": {1591649830: "Ana"}, "Apellido": {1591649830: "García"}}}
     ],
     "Empleados_Contacto.hfile": [
-        {"row_key": "1", "columns": {"Teléfono": {"timestamp": 1591649830, "value": "555-1234"}}},
-        {"row_key": "2", "columns": {"Teléfono": {"timestamp": 1591649830, "value": "555-5678"}}}
+        {"row_key": "1", "columns": {"Teléfono": {1591649830 : "555-1234"}}},
+        {"row_key": "2", "columns": {"Teléfono": {1591649830 : "555-5678"}}}
     ],
     "Empleados_Trabajo.hfile": [
-        {"row_key": "1", "columns": {"Departamento": {"timestamp": 1591649830, "value": "TI"}, "Posición": {"timestamp": 1591649830, "value": "Desarrollador"}}},
-        {"row_key": "2", "columns": {"Departamento": {"timestamp": 1591649830, "value": "HR"}, "Posición": {"timestamp": 1591649830, "value": "Manager"}}}
+        {"row_key": "1", "columns": {"Departamento": {1591649830 : "TI"}, "Posición": { 1591649830 : "Desarrollador"}}},
+        {"row_key": "2", "columns": {"Departamento": {1591649830 : "HR"}, "Posición": { 1591649830 : "Manager"}}}
     ],
     "Departamentos_Detalles.hfile": [
-        {"row_key": "1", "columns": {"NombreDepto": {"timestamp": 1591649830, "value": "TI"}}},
-        {"row_key": "2", "columns": {"NombreDepto": {"timestamp": 1591649830, "value": "HR"}}}
+        {"row_key": "1", "columns": {"NombreDepto": {1591649830: "TI"}}},
+        {"row_key": "2", "columns": {"NombreDepto": {1591649830: "HR"}}}
     ],
     "Departamentos_Personal.hfile": [
-        {"row_key": "1", "columns": {"Empleado": {"timestamp": 1591649830, "value": "Juan"}}},
-        {"row_key": "2", "columns": {"Empleado": {"timestamp": 1591649830, "value": "Ana"}}}
+        {"row_key": "1", "columns": {"Empleado": { 1591649830: "Juan"}}},
+        {"row_key": "2", "columns": {"Empleado": { 1591649830: "Ana"}}}
     ],
     "Proyectos_Info.hfile": [
-        {"row_key": "1", "columns": {"NombreProyecto": {"timestamp": 1591649830, "value": "Proyecto A"}}},
-        {"row_key": "2", "columns": {"NombreProyecto": {"timestamp": 1591649830, "value": "Proyecto B"}}}
+        {"row_key": "1", "columns": {"NombreProyecto": {1591649830: "Proyecto A"}}},
+        {"row_key": "2", "columns": {"NombreProyecto": {1591649830: "Proyecto B"}}}
     ],
     "Proyectos_Tiempo.hfile": [
-        {"row_key": "1", "columns": {"Inicio": {"timestamp": 1591649830, "value": "2024-01-01"}, "Fin": {"timestamp": 1591649830, "value": "2024-06-01"}}},
-        {"row_key": "2", "columns": {"Inicio": {"timestamp": 1591649830, "value": "2024-02-01"}, "Fin": {"timestamp": 1591649830, "value": "2024-07-01"}}}
+        {"row_key": "1", "columns": {"Inicio": { 1591649830: "2024-01-01"}, "Fin": {1591649830 : "2024-06-01"}}},
+        {"row_key": "2", "columns": {"Inicio": { 1591649830: "2024-02-01"}, "Fin": {1591649830 : "2024-07-01"}}}
     ]
 }
 

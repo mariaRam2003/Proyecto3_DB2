@@ -3,8 +3,7 @@
         "row_key": "1",
         "columns": {
             "NombreDepto": {
-                "timestamp": 1716910984,
-                "value": "TI"
+                "1717091406": "TI"
             }
         }
     },
@@ -12,8 +11,7 @@
         "row_key": "2",
         "columns": {
             "NombreDepto": {
-                "timestamp": 1716910984,
-                "value": "HR"
+                "1717091406": "HR"
             }
         }
     }
