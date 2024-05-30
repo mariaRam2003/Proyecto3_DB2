@@ -137,8 +137,7 @@ class HBaseSimulator:
         for row_key in sorted(self.tables[table_name]["data"].keys()):
             if start_row <= row_key <= end_row:
                 row_data = self.tables[table_name]["data"][row_key]
-                row_metadata = {"timestamp": int(time.time())}
-                scanned_data[row_key] = {"metadata": row_metadata, "columns": row_data}
+                scanned_data[row_key] = row_data
         return scanned_data
 
     
