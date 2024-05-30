@@ -21,8 +21,29 @@ def load_initial_dataset(hbs):
     for table_name in ["Empleados", "Departamentos", "Proyectos"]:
         if table_name in hbs.tables and not hbs.is_enabled(table_name):
             hbs.enable(table_name)
-    
-    # # Insertar datos en la tabla Empleados
+
+    for file in os.listdir("data"):
+        if file.endswith(".hfile"):
+            table, column_family = file.split("_")
+            column_family = column_family[:-6]
+            json_data = json.load(open(f"data/{file}"))
+
+            for data_idx, data in enumerate(json_data):
+                row_key = data["row_key"]
+                insert_data = json_data[data_idx]["columns"]
+                
+                if table not in hbs.tables:
+                    hbs.tables[table] = {"data": {}}
+                if row_key not in hbs.tables[table]["data"]:
+                    hbs.tables[table]["data"][row_key] = {}
+                if column_family not in hbs.tables[table]["data"][row_key]:
+                    hbs.tables[table]["data"][row_key][column_family] = {}
+
+                hbs.tables[table]["data"][row_key][column_family] = insert_data                
+
+            
+        
+    # Insertar datos en la tabla Empleados
     hbs.put("Empleados", "1", "Info:Nombre", "Juan")
     hbs.put("Empleados", "1", "Info:Apellido", "Pérez")
     hbs.put("Empleados", "1", "Contacto:Teléfono", "555-1234")

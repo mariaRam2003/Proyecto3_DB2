@@ -1,0 +1,8 @@
+{
+    "table_name": "Pepito",
+    "is_enabled": true,
+    "column_families": {
+        "cf1": {},
+        "cf2": {}
+    }
+}
