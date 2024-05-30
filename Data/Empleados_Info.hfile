@@ -3,12 +3,10 @@
         "row_key": "1",
         "columns": {
             "Nombre": {
-                "timestamp": 1716910984,
-                "value": "Juan"
+                "1717091406": "Juan"
             },
             "Apellido": {
-                "timestamp": 1716910984,
-                "value": "P\u00e9rez"
+                "1717091406": "P\u00e9rez"
             }
         }
     },
@@ -16,12 +14,10 @@
         "row_key": "2",
         "columns": {
             "Nombre": {
-                "timestamp": 1716910984,
-                "value": "Ana"
+                "1717091406": "Ana"
             },
             "Apellido": {
-                "timestamp": 1716910984,
-                "value": "Garc\u00eda"
+                "1717091406": "Garc\u00eda"
             }
         }
     }
