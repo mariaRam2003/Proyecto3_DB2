@@ -196,6 +196,9 @@ def main():
             if table_name not in hbs.tables:
                 print(f"Error: La tabla '{table_name}' no existe.")
                 continue
+            if not hbs.is_enabled(table_name):  # Añadimos la verificación de si la tabla está habilitada
+                print(f"Error: La tabla '{table_name}' está deshabilitada. No se pueden insertar o actualizar datos.")
+                continue
             row_key = input("Row Key: ").strip()
             if not row_key:
                 print("Error: El Row Key no puede estar vacío.")
@@ -207,6 +210,7 @@ def main():
             value = input("Valor: ").strip()
             hbs.put(table_name, row_key, column, value)
             print("Datos insertados/actualizados.")
+
         
         elif choice == '11':
             table_name = input("Nombre de la tabla: ").strip()
