@@ -114,20 +114,17 @@ class HBaseSimulator:
         return None
     
     def put(self, table_name, row_key, column, value):
-        # Verificar si la tabla esta habilitada
         if not self.is_enabled(table_name):
             raise ValueError(f"Table {table_name} is disabled.")
-        
-        # Obtenemos el column family y la columna
         cf, col = column.split(":")
         timestamp = int(time.time())
-
-        # Verificar si la tabla tiene la fila
         if row_key not in self.tables[table_name]["data"]:
             self.tables[table_name]["data"][row_key] = {}
         if cf not in self.tables[table_name]["data"][row_key]:
             self.tables[table_name]["data"][row_key][cf] = {}
-        self.tables[table_name]["data"][row_key][cf][col] = {timestamp: value}
+        if col not in self.tables[table_name]["data"][row_key][cf]:
+            self.tables[table_name]["data"][row_key][cf][col] = {}
+        self.tables[table_name]["data"][row_key][cf][col][str(timestamp)] = value
         self.save_data(table_name)
     
     def get(self, table_name, row_key):
