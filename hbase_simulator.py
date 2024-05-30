@@ -127,10 +127,23 @@ class HBaseSimulator:
         self.tables[table_name]["data"][row_key][cf][col][str(timestamp)] = value
         self.save_data(table_name)
     
-    def get(self, table_name, row_key):
-        if row_key in self.tables[table_name]["data"]:
-            return self.tables[table_name]["data"][row_key]
-        return None
+    def get(self, table_name, row_key, column=None):
+        if table_name not in self.tables:
+            raise ValueError(f"Table {table_name} not found.")
+
+        if row_key not in self.tables[table_name]["data"]:
+            raise ValueError(f"Row key {row_key} not found in table {table_name}.")
+        
+        if column:
+            cf, col = column.split(":")
+            if cf in self.tables[table_name]["data"][row_key] and col in self.tables[table_name]["data"][row_key][cf]:
+                column_data = self.tables[table_name]["data"][row_key][cf][col]
+                latest_timestamp = max(column_data.keys(), key=int)
+                return {latest_timestamp: column_data[latest_timestamp]}
+            raise ValueError(f"Column {column} not found for row key {row_key}.")
+        
+        return self.tables[table_name]["data"][row_key]
+        
     
     def scan(self, table_name, start_row, end_row):
         scanned_data = {}
